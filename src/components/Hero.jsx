@@ -13,6 +13,7 @@ import searchMd from "../assets/img/search-md.svg";
 import plusSquare from "../assets/img/plus-square.svg";
 import Generating from "./Generating";
 import Notification from "./Notification";
+import Logos from "./Logos";
 
 const Hero = () => {
   const heroIcons = [homeSmile, file02, searchMd, plusSquare];
@@ -79,11 +80,10 @@ const Hero = () => {
                     title="Code generation"
                   />
                 </ScrollParallax>
-
-                <Gradient />
               </div>
             </div>
           </div>
+          <Gradient />
           <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <img
               src={heroBackground}
@@ -93,9 +93,10 @@ const Hero = () => {
               height={1800}
             />
           </div>
-
           <BackgroundCircles />
         </div>
+
+        <Logos className="hidden relative z-10 mt-20 lg:block" />
       </div>
 
       <BottomLine />
